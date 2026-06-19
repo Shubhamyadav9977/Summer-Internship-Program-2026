@@ -3,124 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canva UI Clone</title>
+    <title>Canva Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="task6.css">
 </head>
 <body>
-
-    <!-- Top Navbar -->
-    <header>
-        <div class="logo">Canva</div>
-
-        <div class="nav-center">
-            <button>File</button>
-            <button>Resize</button>
-            <button>Editing</button>
+    
+    <div class="header">
+        <div class="header-left">
+            <button class="icon-btn"><i class="fa-solid fa-bars"></i></button>
+            <button class="text-btn">File</button>
+            <button class="text-btn">Resize</button>
+            <button class="text-btn"><i class="fa-solid fa-pen"></i> Editing <i class="fa-solid fa-chevron-down"></i></button>
+            <div class="divider"></div>
+            <button class="icon-btn"><i class="fa-solid fa-undo"></i></button>
+            <button class="icon-btn"><i class="fa-solid fa-redo"></i></button>
+            <button class="icon-btn"><i class="fa-regular fa-clock"></i><span class="new-badge">New</span></button>
         </div>
-
-        <div class="nav-right">
-            <button class="present">Present</button>
-            <button class="share">Share</button>
+        <div class="header-center">
+            <button class="text-btn">Sample</button>
         </div>
-    </header>
-
+        <div class="header-right">
+            <button class="trial-btn"><i class="fa-solid fa-crown"></i> Start your trial for ₹0</button>
+            <button class="icon-btn profile"><img src="https://i.pravatar.cc/32" alt=""></button>
+            <button class="icon-btn"><i class="fa-solid fa-chart-simple"></i></button>
+            <button class="icon-btn"><i class="fa-regular fa-comment"></i></button>
+            <button class="present-btn">Present <i class="fa-solid fa-chevron-down"></i></button>
+            <button class="share-btn">Share</button>
+        </div>
+    </div>
     <div class="main">
-
-        <!-- Sidebar -->
-        <aside class="sidebar">
-            <h3>Templates</h3>
-            <h3>Elements</h3>
-            <h3>Text</h3>
-            <h3>Uploads</h3>
-            <h3>Projects</h3>
-            <h3>Apps</h3>
-            <h3>Audio</h3>
-        </aside>
-
-        <!-- Left Content -->
-        <section class="left-panel">
-
-            <input type="text"
-                placeholder="Describe your ideal design">
-
-            <div class="buttons">
-                <button>Generate</button>
-                <button>Search</button>
+    <div class="left-sidebar">
+            <div class="side-item active">
+                <i class="fa-solid fa-table-cells-large"></i>
+                <span>Templates</span>
             </div>
-
-            <h2>Recently Used</h2>
-
-            <div class="templates">
-
-                <div class="card">
-                  <image src="images.jpeg" ></image>
-                </div>
-                <div class="card">
-                  <image src="images(1).jpeg" ></image>
-                </div>
-                <div class="card">
-                  <image src="images(2).jpeg" ></image>
-                </div>
-                <div class="card">
-                  <image src="images(3).jpeg" ></image>
-                </div>
-                <div class="card">
-                  <image src="images(4).jpeg" ></image>
-                </div>
-                <div class="card">
-                  <image src="images(5).jpeg" ></image>
-                </div>
-                <div class="card">
-                  <image src="images(6).jpeg" ></image>
-                </div>
-                <div class="card">
-                  <image src="images(7).jpeg" ></image>
-                </div>
-
+            <div class="side-item">
+                <i class="fa-solid fa-shapes"></i>
+                <span>Elements</span>
             </div>
-
-        </section>
-
-        <!-- Canvas -->
-        <section class="canvas-section">
-
-            <div class="toolbar">
-                <button>Edit</button>
-                <button>Effects</button>
-                <button>Animate</button>
-                <button>Position</button>
+            <div class="side-item">
+                <i class="fa-solid fa-t"></i>
+                <span>Text</span>
+            </div>
+            <div class="side-item">
+                <i class="fa-solid fa-star"></i>
+                <span>Brand</span>
+                <i class="fa-solid fa-crown crown"></i>
+            </div>
+            <div class="side-item">
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+                <span>Uploads</span>
+            </div>
+            <div class="side-item">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <span>Tools</span>
+            </div>
+            <div class="side-item">
+                <i class="fa-regular fa-folder"></i>
+                <span>Projects</span>
+            </div>
+            <div class="side-item">
+                <i class="fa-solid fa-border-all"></i>
+                <span>Apps</span>
+            </div>
+            <div class="side-item">
+                <i class="fa-solid fa-clapperboard"></i>
+                <span>Magic Media</span>
+            </div>
+            <div class="side-item">
+                <i class="fa-solid fa-music"></i>
+                <span>Audio</span>
+            </div>
+        </div>
+        <div class="elements-panel">
+            <div class="search-input">
+                <i class="fa-solid fa-plus"></i>
+                <input type="text" placeholder="Describe your ideal design">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+            <div class="panel-tabs">
+                <button class="tab-btn"><i class="fa-solid fa-wand-magic-sparkles"></i> Generate</button>
+                <button class="tab-btn active">Search</button>
+            </div>
+            <div class="panel-section">
+                <div class="section-header">
+                    <span>Recently used</span>
+                    <span class="see-all">See all</span>
+                </div>
+                <div class="template-grid">
+                    <div class="template-item">
+                        <img src="images.jpeg" >
+                    </div>
+                    <div class="template-item">
+                        <img src="images(1).jpeg" >
+                    </div>
+                </div>
+            </div>
+            <div class="panel-section">
+                <div class="section-header">All results</div>
+                <div class="template-grid">
+                    <div class="template-item">
+                        <img src="images(2).jpeg" >
+                        <i class="fa-solid fa-crown pro-badge"></i>
+                    </div>
+                    <div class="template-item">
+                        <img src="images(3).jpeg" >
+                    </div>
+                    <div class="template-item">
+                        <img src="images(4).jpeg" >
+                    </div>
+                    <div class="template-item">
+                        <img src="images(5).jpeg" >
+                    </div>
+                    <div class="template-item">
+                        <img src="images(6).jpeg" alt="Pitch Deck">
+                        <i class="fa-solid fa-crown pro-badge"></i>
+                    </div>
+                    <div class="template-item">
+                        <img src="images(7).jpeg">
+                    </div>
+                    <div class="template-item">
+                        <img src="images(8).jpeg" >
+                        <i class="fa-solid fa-crown pro-badge"></i>
+                    </div>
+                    <div class="template-item">
+                        <img src="images(9).jpeg">
+                        <i class="fa-solid fa-crown pro-badge"></i>
+                    </div>
+                    <div class="template-item">
+                        <img src="images(10).jpeg">
+                    </div>
+                    <div class="template-item">
+                        <img src="images(11).jpeg" alt="Portfolio">
+                        <i class="fa-solid fa-crown pro-badge"></i>
+                    </div>
+                    <div class="template-item">
+                        <img src="images(12).jpeg" >
+                    </div>
+                    <div class="template-item">
+                        <img src="images(13).jpeg" >
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="canvas-area">
+            <div class="floating-toolbar">
+                <button class="ft-btn">Edit</button>
+                <button class="ft-btn color-red"></button>
+                <button class="ft-btn"><i class="fa-solid fa-bars"></i></button>
+                <button class="ft-btn"><i class="fa-solid fa-sliders"></i></button>
+                <button class="ft-btn"><i class="fa-solid fa-table-cells"></i></button>
+                <button class="ft-btn">Effects</button>
+                <button class="ft-btn">Animate</button>
+                <button class="ft-btn">Position</button>
+                <div class="divider"></div>
+                <button class="ft-btn"><i class="fa-solid fa-paint-roller"></i></button>
             </div>
 
             <div class="canvas">
-
-                <div class="circle"></div>
-                <div class="square"></div>
-                <div class="triangle"></div>
-                <div class="pentagon"></div>
-
-                <div class="plus">
-                    <div class="v"></div>
-                    <div class="h"></div>
+                <div class="shape circle"></div>
+                <div class="shape square"></div>
+                <div class="shape triangle"></div>
+                <div class="shape pentagon"></div>
+                <div class="shape plus"></div>
+                <div class="shape parallelogram"></div>
+                <div class="shape arrow"></div>
+                <div class="shape heart selected">
+                    <div class="shape-toolbar">
+                        <button><i class="fa-solid fa-rotate-left"></i></button>
+                        <button><i class="fa-solid fa-lock"></i></button>
+                        <button><i class="fa-regular fa-copy"></i></button>
+                        <button><i class="fa-regular fa-trash-can"></i></button>
+                        <button><i class="fa-solid fa-ellipsis"></i></button>
+                    </div>
+                    <div class="resize-handles">
+                        <span class="handle tl"></span>
+                        <span class="handle t"></span>
+                        <span class="handle tr"></span>
+                        <span class="handle r"></span>
+                        <span class="handle br"></span>
+                        <span class="handle b"></span>
+                        <span class="handle bl"></span>
+                        <span class="handle l"></span>
+                    </div>
+                    <button class="rotate-btn"><i class="fa-solid fa-rotate"></i></button>
                 </div>
-
-                <div class="parallelogram"></div>
-
-                <div class="arrow"></div>
-
-                <div class="heart"></div>
-
             </div>
-
-            <div class="pages">
-
-                <div class="page-thumb"></div>
-                <div class="add-page">+</div>
-
+            
+            <div class="bottom-bar">
+                <div class="bottom-left">
+                    <button><i class="fa-regular fa-note-sticky"></i> Notes</button>
+                    <button><i class="fa-regular fa-clock"></i> Timer</button>
+                </div>
+                <div class="bottom-center">
+                    <div class="page-selector">
+                        <img src="ss.png" alt="">
+                    </div>
+                    <button><i class="fa-solid fa-plus"></i></button>
+                    <button><i class="fa-solid fa-chevron-down"></i></button>
+                </div>
+                <div class="bottom-right">
+                    <input type="range" min="10" max="200" value="53">
+                    <span>53%</span>
+                    <button><i class="fa-regular fa-clone"></i> Pages</button>
+                    <span>1 / 1</span>
+                    <button><i class="fa-solid fa-table-cells"></i></button>
+                    <button><i class="fa-solid fa-expand"></i></button>
+                    <button><i class="fa-regular fa-comment"></i></button>
+                </div>
             </div>
-
-        </section>
-
+        </div>
     </div>
-
 </body>
 </html>
