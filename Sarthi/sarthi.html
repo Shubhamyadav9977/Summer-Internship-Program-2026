@@ -37,7 +37,7 @@
           <p>
             AI-powerd planning, budeget optimization, and trusted vendos - everything you need for a perfect celebration.
           </p>
-          <button class="start">
+          <button class="start" onclick="goToPlanPage()">
             START PLANNING NOW  →
           </button>
           <div class="Statistics">
@@ -163,6 +163,130 @@
           </div>
        </section>
        </section>
-        
+<section class="planner">
+    <div class="planner-left">
+        <h2>
+            Try Our Smart Planner
+            <span>✨</span>
+        </h2>
+        <div class="planner-form">
+            <div class="input-box">
+                <label>Total Budget</label>
+                <div class="input-field">
+                    <i class="fa-solid fa-wallet"></i>
+                    <input type="number" placeholder="500000">
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Guest Count</label>
+                <div class="input-field">
+                    <i class="fa-solid fa-users"></i>
+                    <input type="number" placeholder="300">
+                </div>
+            </div>
+          <div class="input-box">
+                <label>Event Type</label>
+                <div class="input-field">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <select>
+                        <option>Wedding</option>
+                        <option>Engagement</option>
+                        <option>Reception</option>
+                        <option>Birthday</option>
+                        <option>Corporate Event</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>City</label>
+                <div class="input-field">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <select>
+                        <option>Bhopal</option>
+                        <option>Indore</option>
+                        <option>Jaipur</option>
+                        <option>Delhi</option>
+                    </select>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Event Style</label>
+                <div class="input-field">
+                    <i class="fa-solid fa-gem"></i>
+                    <select>
+                        <option>Luxury</option>
+                        <option>Standard</option>
+                        <option>Budget Friendly</option>
+                    </select>
+                </div>
+            </div>
+          <button class="generate-plan">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                Generate My Plan
+            </button>
+            <div id="resultBox"></div>
+            <div id="resultBox"></div>
+
+<div id="budgetBars">
+  <div class="bar">
+    <p>Venue</p>
+    <div class="progress"><div id="venueBar"></div></div>
+  </div>
+
+  <div class="bar">
+    <p>Food</p>
+    <div class="progress"><div id="foodBar"></div></div>
+  </div>
+
+  <div class="bar">
+    <p>Decoration</p>
+    <div class="progress"><div id="decorationBar"></div></div>
+  </div>
+
+  <div class="bar">
+    <p>Sound System</p>
+    <div class="progress"><div id="sound-system"></div></div>
+  </div>
+</div>
+        </div>
+    </div>
+    <div class="planner-right">
+        <div class="planner-card">
+            <h2>Why Use AI Planner?</h2>
+            <div class="planner-benefit">
+                <i class="fa-solid fa-brain"></i>
+                <div>
+                    <h3>Smart Budget Distribution</h3>
+                    <p>
+                        Automatically divides your budget
+                        according to your event requirements.
+                    </p>
+                </div>
+            </div>
+            <div class="planner-benefit">
+                <i class="fa-solid fa-building"></i>
+                <div>
+                    <h3>Vendor Suggestions</h3>
+                    <p>
+                        Get top-rated vendors
+                        within your allocated budget.
+                    </p>
+                </div>
+            </div>
+            <div class="planner-benefit">
+                <i class="fa-solid fa-chart-line"></i>
+                <div>
+                    <h3>Cost Optimization</h3>
+                    <p>
+                        Reduce unnecessary expenses and
+                        maximize your wedding experience.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="sarthi.js"></script>
+
 </body>
 </html>

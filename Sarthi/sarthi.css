@@ -174,21 +174,28 @@ nav ul li a:hover{
 }.arrow {
     font-size: 28px;
     color: gray;
-}.features {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 150px 8% 80px;
-   flex-wrap: wrap;
+}.features{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:stretch;
+    gap:20px;
+    padding:80px 8%;
+    flex-wrap:nowrap;    
 }
-.feature {
-   width: 220px;
-   background: white;
-    padding: 20px;
-    border-radius: 20px;
-     text-align: center;
-     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+.feature{
+    flex:1;                
+    min-width:180px;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.feature:hover{
+    transform:translateY(-8px);
 }
 .feature-icon {
  width: 65px;    
@@ -217,4 +224,196 @@ nav ul li a:hover{
 }
 .orange {
     background: #ff7f50;
+}.planner{
+    width:100%;
+    padding:80px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:50px;
+    background:#f7f8fc;
+}
+.planner-left{
+    width:65%;
+}
+.planner-left h2{
+    font-size:38px;
+    color:#222;
+    margin-bottom:30px;
+}
+.planner-left h2 span{
+    color:#ff4d6d;
+}.planner-form{
+ background:white;
+ border-radius:20px;
+  padding:35px;
+   display:grid;
+   grid-template-columns:repeat(2,1fr);
+   gap:25px;
+   box-shadow:0 10px 25px rgba(0,0,0,0.08);
+ }
+.input-box{
+  display:flex;
+  flex-direction:column;
+}
+.input-box label{
+font-weight:600;
+margin-bottom:10px;
+color:#444;}
+.input-field{
+display:flex;
+align-items:center;
+gap:12px;
+background:#fafafa;
+border:1px solid #ddd;
+border-radius:12px;
+padding:14px 16px;
+transition:.3s;
+}
+.input-field:hover{
+ border-color:#ff4d6d;
+}
+.input-field i{
+color:#ff4d6d;
+font-size:18px;
+}
+.input-field input,.input-field select{
+width:100%;
+border:none;
+outline:none;
+background:none;
+font-size:16px;
+}
+.generate-plan{
+grid-column:span 2;
+padding:18px;
+border:none;
+border-radius:12px;
+background:#ff4d6d;
+ color:white;
+font-size:18px;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+.generate-plan:hover{
+ background:#d63357;
+ transform:translateY(-3px);}
+.planner-right{
+width:35%;
+}
+.planner-card{
+    background:white;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    position:sticky;
+    top:100px;
+}
+.planner-card h2{
+    margin-bottom:30px;
+    color:#222;
+}
+.planner-benefit{
+    display:flex;
+    align-items:flex-start;
+    gap:18px;
+    margin-bottom:30px;
+}
+.planner-benefit i{
+    width:60px;
+    height:60px;
+    background:#ff4d6d;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    flex-shrink:0;
+}
+.planner-benefit h3{
+    margin-bottom:8px;
+    font-size:20px;
+    color:#222;
+}
+.planner-benefit p{
+    color:#666;
+    line-height:25px;
+}
+@media(max-width:1000px){
+.planner{
+flex-direction:column;
+}
+.planner-left,
+.planner-right{
+width:100%;
+}
+}
+@media(max-width:700px){
+.planner-form{
+grid-template-columns:1fr;
+}
+.generate-plan{
+grid-column:span 1;
+}
+}
+#budgetBars {
+  margin-top: 15px;
+}
+.bar {
+  margin: 10px 0;
+}
+.progress {
+  width: 100%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.progress div {
+  height: 100%;
+  width: 0%;
+  background: #4CAF50;
+  transition: 0.5s;}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+nav {
+  background: #f7f3f4;
+  color: #ff4d6d;
+  padding: 15px 30px;
+}
+.start-plan {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+.start-plan h2 {
+  font-size: 32px;
+  color: #333;
+}
+.start-plan p {
+  font-size: 18px;
+  color: #666;
+}
+.start-btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  background: #ff4d6d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}.start-btn:hover {
+  background: #e63e5c;
+  transform: scale(1.05);
 }
